@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    height: 480px;
+    background-size: cover;
+    background-color: #3900965e;
+    color: black;
+}
+
+/* Body */
+body {
+    color: aliceblue;
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+.mainArea {
+    padding: 30px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px 0;
+    
+}
+
+.row {
+    background-color: rgb(14, 14, 14);
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    position: relative;
+}
+
+.row button {
+    margin: 20px 0;
+    background-color: black;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.col {
+    background-color: rgb(14, 14, 14);
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cardo {
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardo p {
+    margin: 100px 100px 100px 100px;
+}
+
+.infoSection {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.infoSection h1, h2, p {
+    margin: 30px;
+}
+.contact {
+    height: 100px;
+    background-color: rgb(27, 27, 27);
+}
+
+.contacts {
+ padding: 25px;
+}
+a 
+.contacts a {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.gridContainer {
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(14, 14, 14);
+    margin: 20px auto;
+}
+
+.gridContainer:hover {
+    box-shadow: -10px 10px #d8d8d8;
+}
+.gridContainer {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: inherit;
+    padding: 20px;
+    background-color: rgb(66, 66, 66);
+    color: aliceblue;
+    overflow: hidden;
+    height: 400px;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialLinks {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card1 {
+        flex-direction: row;
+        padding: 0 50px;
+    }
+
+    .row, .col {
+        margin: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid2 {
+        grid-template-columns: 50% 50%;
+    }
+
+    .contacts a {
+        font-size: 32px;
+    }
+   
+}
